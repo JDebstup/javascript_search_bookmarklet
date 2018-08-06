@@ -8,7 +8,7 @@ javascript:
 
 		for (;;)
 		{
-			var term_current = prompt("Enter search term #" + counter + " (no need to add commas):","");
+			var term_current = prompt("Enter search term #" + counter + ".\n" + "Do not add commas between each terms - the program does it automatically.\n" + "Once you're finished, simply don't enter anything in the next term & just click 'OK'.","");
 			if ((term_current != "") && (term_current != null))
 			{
 				terms.push(term_current);
@@ -19,7 +19,7 @@ javascript:
 				break;
 			}
 		}
-		if (terms != null)
+		if ((terms != null) && (terms != ""))
 		{
 			var terms_all = "";
 			for (var i = 0; i < terms.length; i++)
@@ -31,7 +31,7 @@ javascript:
 					terms_all = terms_all.concat(", ");
 				}
 			}
-			location="https://www.google.co.uk/search?q="+escape(terms_all);
+			window.open("https://www.google.co.uk/search?q="+escape(terms_all));
 		}
 	}
 )()
