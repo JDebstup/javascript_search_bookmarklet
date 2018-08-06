@@ -8,7 +8,7 @@ javascript:
 
 		for (;;)
 		{
-			var term_current = prompt("Enter search term #" + counter + ":","");
+			var term_current = prompt("Enter search term #" + counter + " (no need to add commas):","");
 			if ((term_current != "") && (term_current != null))
 			{
 				terms.push(term_current);
