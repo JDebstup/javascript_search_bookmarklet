@@ -1,6 +1,4 @@
-# javascript_search_bookmarklet
-
-[Use the bookmarklet here.](javascript:
+javascript:
 (
 	function()
 	{
@@ -36,4 +34,4 @@
 			location="https://www.google.co.uk/search?q="+escape(terms_all);
 		}
 	}
-)())
+)()
